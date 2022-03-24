@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JSQ order form</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="./logo/logo.png"/>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="main">
+        
+        <div class="container">
+            <div class="header col-sm-12">
+                <div class="top-logo col-md-2 col-sm-4">
+                    <img src="./logo/logo.png" alt="JSQ">
+                </div>
+                <div class="top-heading col-md-10 col-sm-4">
+                    <p>Custom Design Order Form</p>
+                </div>
+            </div>            
+            <div class="order-form col-lg-12 col-sm-4">
+                <div class="col-lg-12">
+                    <form method="POST" class="register-form" id="register-form" autocomplete="off" name="register-form">
+                        <div class="form-row box col-lg-12 col-sm-4">
+                            <div class="form-group customer-info col-lg-7 col-md-12 col-sm-4">
+                                <div class="heading">
+                                    <p>Customer Information</p>
+                                </div>
+                                <div>
+                                    <label for="Name">Name :</label>
+                                    <input type="text" name="Name" id="name" required/>
+                                </div>
+                                <div>
+                                    <label for="Address">Address :</label>
+                                    <input type="text" name="Address" id="address" required/>
+                                </div>
+                                <div>
+                                    <label for="Telephone">Telephone :</label>
+                                    <input type="text" name="Telephone" id="telephone" required/>
+                                </div>
+                                <div>
+                                    <label for="Instagram">Instagram :</label>
+                                    <input type="text" name="Instagram" id="instagram" required/>
+                                </div>
+                            </div>
+                            <div class="form-group time-frame col-lg-4 col-md-12 col-sm-4">
+                                <div class="heading">
+                                    <p>TimeFrame</p>
+                                </div>
+                                <div>
+                                    <label for="Delivery-Date">When do you need the order?</label>
+                                    <input type="text" name="Delivery-Date" id="delivery-date" required/>
+                                </div>
+                            </div>
+                            <div class="form-group delivery-info col-lg-1 col-md-12 col-sm-4">
+                                <div class="heading">
+                                    <p>Delivery Information</p>
+                                </div>    
+                                <div class="form-radio">
+                                    <div class="form-radio-item">
+                                        <label for="shipping">Shipping</label>
+                                        <input type="radio" name="Delivery-Info" id="shipping" value="Shipping">
+                                        <span class="check"></span>
+                                    </div>
+                                    <div class="form-radio-item">
+                                        <label for="pick_up">Pick up</label>
+                                        <input type="radio" name="Delivery-Info" id="pick_up" value="Pick up">
+                                        <span class="check"></span>
+                                    </div>
+                                    <div class="form-radio-item">
+                                        <label for="drop_off">Drop off</label>
+                                        <input type="radio" name="Delivery-Info" id="drop_off" value="Drop off">
+                                        <span class="check"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Second blcok -->
+                        <div class="box">
+                            <div class="form-row col-lg-12 col-sm-4">
+                                <div class="form-group t-shirt-images col-lg-3 col-md-12 col-sm-4">
+                            
+                                    <div class="front-tshirt-image">
+                                        <img src="./Images/front.png" alt="T-Shirt Front">
+                                    </div>
+                                    <div class="back-tshirt-image">
+                                        <img src="./Images/back.png" alt="T-Shirt Front">
+                                    </div>
+                                </div>
+
+                                <div class="form-group shirt-style col-lg-3 col-md-12 col-sm-4">
+                                    <div class="heading">
+                                        <p>Shirt Style</p>
+                                    </div>
+                                    
+                                    <div class="form-radio">
+                                        <div class="form-radio-item">
+                                            <label for="unisex">Unisex</label>
+                                            <input type="radio" name="Shirt-Style" id="unisex" value="Unisex">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">                                                
+                                            <label for="women’s">Women’s</label>
+                                            <input type="radio" name="Shirt-Style" id="women’s" value="Women’s">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="v-neck">V-neck</label>
+                                            <input type="radio" name="Shirt-Style" id="v-neck" value="V-neck">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="pockets">Pockets</label>
+                                            <input type="radio" name="Shirt-Style" id="pockets" value="Pockets">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="sweatshirt">Sweatshirt</label>
+                                            <input type="radio" name="Shirt-Style" id="sweatshirt" value="Sweatshirt">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="sweatshirt-with-hoodie">Sweatshirt with <br /> Hoodie</label>
+                                            <input type="radio" name="Shirt-Style" id="sweatshirt-with-hoodie" value="Sweatshirt with Hoodie">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="long-sleeves">Long sleeves</label>
+                                            <input type="radio" name="Shirt-Style" id="long-sleeves" value="Long sleeves">
+                                            <span class="check"></span>                                        
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="100-%-cotton">100 % Cotton</label>
+                                            <input type="radio" name="Shirt-Style" id="100-%-cotton" value="100 % Cotton">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="poly-blend">Poly-Blend</label>
+                                            <input type="radio" name="Shirt-Style" id="poly-blend" value="Poly-Blend">
+                                            <span class="check"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group others col-lg-3 col-md-12 col-sm-4">
+                                    <div class="heading">
+                                        <p>Others</p>
+                                    </div>
+                                    <div class="form-radio">
+                                        <div class="form-radio-item">
+                                            <label for="leggings">Leggings</label>
+                                            <input type="radio" name="Others" id="leggings" value="Leggings">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="pillows">Pillows</label>
+                                            <input type="radio" name="Others" id="pillows" value="Pillows">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="tote-bags">Tote Bags</label>
+                                            <input type="radio" name="Others" id="tote-bags" value="Tote Bags">
+                                            <span class="check"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group size col-lg-3 col-md-12 col-sm-4">
+                                    <div class="heading">
+                                        <p>Size</p>
+                                    </div>                                    
+                                    <!-- just add it bcz to get all sizes value  -->
+                                    <input type="text" name="All-Sizes" id="all-sizes" value="" style="display: none;">
+
+                                        <div class="form-radio-item">
+                                            <label for="adult">Adult</label>
+                                            <input type="checkbox" name="Size" id="adult" value="Adult">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="xs">XS</label>
+                                            <input type="checkbox" name="Size" id="xs" value="XS">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="small">Small</label>
+                                            <input type="checkbox" name="Size" id="small" value="Small">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="medium">Medium</label>
+                                            <input type="checkbox" name="Size" id="medium" value="Medium">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="large">Large</label>
+                                            <input type="checkbox" name="Size" id="large" value="Large">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="xl">XL</label>
+                                            <input type="checkbox" name="Size" id="xl" value="XL">
+                                            <span class="check"></span>
+                                            </div>
+                                        <div class="form-radio-item">
+                                            <label for="2xl">2XL</label>
+                                            <input type="checkbox" name="Size" id="2xl" value="2XL">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="3xl">3XL</label>
+                                            <input type="checkbox" name="Size" id="3xl" value="3XL">
+                                            <span class="check"></span>
+                                        </div>
+                                            <div class="form-radio-item">
+                                            <label for="4xl">4XL</label>
+                                            <input type="checkbox" name="Size" id="4xl" value="4XL">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="5xl">5XL</label>
+                                            <input type="checkbox" name="Size" id="5xl" value="5XL">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="6xl">6XL</label>
+                                            <input type="checkbox" name="Size" id="6xl" value="6XL">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="youth">Youth</label>
+                                            <input type="checkbox" name="Size" id="youth" value="Youth">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="infant-0-3-month">Infant 0-3 Month</label>
+                                            <input type="checkbox" name="Size" id="infant-0-3-month" value="Infant 0-3 Month">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="infant-3-6-month">Infant 3-6 Month</label>
+                                            <input type="checkbox" name="Size" id="infant-3-6-month" value="Infant 3-6 Month">
+                                            <span class="check"></span>
+                                            </div>
+                                        <div class="form-radio-item">
+                                            <label for="infant-6-12-month">Infant 6-12 Month</label>
+                                            <input type="checkbox" name="Size" id="infant-6-12-month" value="Infant 6-12 Month">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="infant-12-24-month">Infant 12-24 Month</label>
+                                            <input type="checkbox" name="Size" id="infant-12-24-month" value="Infant 12-24 Month">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="y-xs">Y XS</label>
+                                            <input type="checkbox" name="Size" id="y-xs" value="Y XS">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="y-small">Y Small</label>
+                                            <input type="checkbox" name="Size" id="y-small" value="Y Small">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="y-medium">Y Medium</label>
+                                            <input type="checkbox" name="Size" id="y-medium" value="Y Medium">
+                                            <span class="check"></span>
+                                        </div>
+                                        <div class="form-radio-item">
+                                            <label for="y-large">Y Large</label>
+                                            <input type="checkbox" name="Size" id="y-large" value="Y Large">
+                                            <span class="check"></span>
+                                        </div>
+                                    
+                                </div>
+                            </div>                            
+                            <div class="text-information col-md-12 col-sm-4">
+                                <div class="form-row col-lg-12 col-sm-4">
+                                    <div class="form-group quantity">
+                                        <label for="quantity">Quantity :</label>
+                                        <input type="text" name="Quantity" id="quantity" required/>
+                                    </div>
+                                    <div class="form-group colors">
+                                        <label for="colors">Colors :</label>
+                                        <input type="text" name="Colors" id="colors" required/>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <label for="details">Details :</label>
+                                    <input type="text" name="Details" id="details" required/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- payment info --> 
+                        <div class="form-row box col-lg-12 col-sm-4">
+                            <div class="form-group payment-info col-lg-12" style="width: 100%;">
+                                <div class="heading">
+                                    <p>Payment Type</p>
+                                </div>
+                            
+                                <div class="form-radio">
+                                    <div class="form-radio-item">
+                                        <label for="credit-card">Credit Card</label>
+                                        <input type="radio" name="Payment-Type" id="credit-card" value="Credit Card">
+                                        <span class="check"></span>
+                                    </div>
+                                    <div class="form-radio-item">
+                                        <label for="cash">Cash</label>
+                                        <input type="radio" name="Payment-Type" id="cash" value="Cash">
+                                        <span class="check"></span>
+                                    </div>
+                                    <div class="form-radio-item">
+                                        <label for="paypal">Paypal</label>
+                                        <input type="radio" name="Payment-Type" id="paypal" value="Paypal">
+                                        <span class="check"></span>
+                                    </div>
+                                    <div class="form-radio-item">
+                                        <label for="cashapp">Cashapp</label>
+                                        <input type="radio" name="Payment-Type" id="cashapp" value="Cashapp">
+                                        <span class="check"></span>
+                                    </div>
+                                    <div class="form-radio-item">
+                                        <label for="zelle">Zelle</label>
+                                        <input type="radio" name="Payment-Type" id="zelle" value="Zelle">
+                                        <span class="check"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <span>Designed by <a href="https://www.fiverr.com/users/nomansarwar722/" style="cursor: pointer;">Web Designer</a></span>
+        </div>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
